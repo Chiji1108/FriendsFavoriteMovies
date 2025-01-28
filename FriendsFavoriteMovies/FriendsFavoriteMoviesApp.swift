@@ -13,5 +13,6 @@ struct FriendsFavoriteMoviesApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Friend.self, Movie.self])
     }
 }
